@@ -1,0 +1,544 @@
+.rangos {
+  display: block;
+  align-items: center;
+  margin-top: 27.8rem;
+  padding: 5rem;
+  height: calc(140vh - 7.4rem);
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, #5a189a), url(../../../img/minecraft-wallpaper.jpg);
+}
+.rangos__container {
+  margin-top: 8rem;
+}
+.rangos__title {
+  text-align: center;
+  padding: 2rem;
+}
+.rangos__tablink {
+  background-color: #555;
+  color: white;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.rangos__tablink--container {
+  display: flex;
+  justify-content: center;
+}
+.rangos__tablink:hover {
+  background-color: #777;
+}
+.rangos__tabcontent {
+  color: white;
+  display: none;
+  padding: 10rem 2rem;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#vip {
+  background-color: #3bbd6b;
+}
+
+#ultimate {
+  background-color: #ee8a00;
+}
+
+#extreme {
+  background-color: #6b2d80;
+}
+
+.bcomprar {
+  width: auto;
+  padding: 1rem 1.8rem;
+  background-color: #f44336;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 27.8rem;
+  height: calc(100vh - 7.4rem);
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, #5a189a), url(../../../img/minecraft-wallpaper.jpg);
+}
+.hero__content {
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+.hero__content--title {
+  font-size: 7rem;
+}
+.hero__content--description {
+  font-size: 2.2rem;
+}
+
+.contenido {
+  margin: 5rem 0;
+}
+.contenido__title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 5rem;
+}
+.contenido__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+}
+.contenido__content--title {
+  color: #43be0a;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+.contenido__content--img {
+  height: 100%;
+  width: 475px;
+}
+
+.info {
+  display: block;
+  margin-top: 27.8rem;
+  height: 100%;
+}
+.info__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.info__container--element {
+  font-size: 3rem;
+}
+
+.avisos {
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, #5a189a), url(../../../img/minecraft-wallpaper.jpg);
+  margin-bottom: 6rem;
+}
+.avisos__container {
+  height: 90rem;
+  background-color: rgba(238, 238, 238, 0.7);
+  display: flex;
+  flex-direction: column;
+  border-style: solid none;
+  border-color: #eee;
+  overflow-y: scroll;
+}
+.avisos__container--element {
+  padding: 3rem;
+  border-style: solid none;
+  border-color: #eee;
+  color: #111;
+}
+.avisos__container--title {
+  color: #5a189a;
+  padding: 2rem 0;
+}
+
+.header__container {
+  background-color: #111;
+  background-size: contain;
+  padding: 3rem 1rem;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  width: 100%;
+}
+.header__logo {
+  height: 12rem;
+  transition: 0.4s;
+}
+.header__nav {
+  display: flex;
+  gap: 4rem;
+}
+.header__nav--link {
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.header__nav--link:hover {
+  color: #43be0a;
+}
+.header__nav--activo {
+  color: #43be0a;
+}
+
+.loginb {
+  display: flex;
+  justify-content: flex-end;
+}
+.loginb__button {
+  padding: 1.2rem 1.2rem;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 1.4rem 2rem;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 6rem;
+  display: none;
+}
+.modal__content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 0.1rem solid #5c5a5a;
+  width: 40%;
+  -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s;
+}
+.modal__content--title {
+  font-size: 1.5rem;
+  color: #111;
+}
+.modal__content--cancelbtn {
+  width: auto;
+  padding: 1rem 1.8rem;
+  background-color: #f44336;
+}
+.modal__content--psw {
+  float: right;
+  padding-top: 1.6rem;
+  font-size: 2rem;
+}
+.modal__content--cbutton {
+  text-align: center;
+  margin: 2.4rem 0 1.2rem 0;
+  position: relative;
+}
+.modal__container {
+  padding: 1.6rem;
+}
+.modal__close {
+  position: absolute;
+  right: 2.5rem;
+  top: 0;
+  color: #111;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.modal__close:hover, .modal__close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.footer__container {
+  background-color: #111;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__info {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.footer__info--img {
+  height: 15rem;
+  padding: 1rem;
+}
+.footer__links {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.footer__links--item:hover {
+  color: #43be0a;
+}
+
+.logoimg {
+  height: 3.5rem;
+  width: 3.5rem;
+  filter: invert(0.9);
+}
+
+.creaciones {
+  display: block;
+  margin-top: 27.8rem;
+  height: 100%;
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, #5a189a), url(../../../img/minecraft-wallpaper.jpg);
+}
+
+.grid {
+  display: grid;
+  margin: 5rem 0;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.grid__content {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #eee;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.grid__content--title {
+  color: #43be0a;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+.grid__content--img {
+  width: 47.5rem;
+  height: 30rem;
+}
+
+.grid__content:nth-child(1),
+.grid__content:nth-child(3) {
+  grid-column: 1;
+}
+
+.grid__content:nth-child(2),
+.grid__content:nth-child(4) {
+  grid-column: 2;
+}
+
+.galeria__container {
+  max-width: 100rem;
+  position: relative;
+  margin: auto;
+}
+.galeria__item {
+  display: none;
+}
+.galeria__item--numbertext {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  top: 0;
+}
+.galeria__item--text {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+.galeria__item--img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.6rem;
+  margin-top: -2.2rem;
+  color: #eee;
+  background-color: rgba(17, 17, 17, 0.5);
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot__container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #5a189a;
+  color: #eee;
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.7rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+}
+
+h6,
+p {
+  font-size: 2.2rem;
+}
+
+.container {
+  max-width: 165rem;
+  margin: 0 auto;
+}
+
+.sombra {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem rgba(10, 10, 10, 0.54);
+  background-color: rgba(17, 17, 17, 0.7);
+  padding: 5rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */

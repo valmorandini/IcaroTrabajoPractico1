@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Extreme LDM - Servidor</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="navbar" class="header__container">
+      <!-- inicio de sesion -->
+      <div>
+        <div class="loginb container">
+          <button
+            class="loginb__button"
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Iniciar sesión
+          </button>
+        </div>
+        <!-- formulario inicio de sesion -->
+        <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="modal__close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <form class="modal__content">
+            <div class="modal__content--cbutton">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="modal__close"
+                title="Cerrar"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__container">
+              <label class="modal__content--title" for="uname"
+                ><b>Usuario</b></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresar usuario"
+                name="uname"
+                required
+              />
+
+              <label class="modal__content--title" for="psw"
+                ><b>Contraseña</b></label
+              >
+              <input
+                type="password"
+                placeholder="Ingresar contraseña"
+                name="psw"
+                required
+              />
+
+              <button type="submit">Ingresar</button>
+              <label class="modal__content--title">
+                <input type="checkbox" checked="checked" name="remember" />
+                Recordarme
+              </label>
+            </div>
+
+            <div class="modal__container" style="background-color: #802b83">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="modal__content--cancelbtn"
+              >
+                Cancelar
+              </button>
+              <span class="modal__content--psw"
+                >Olvidaste la <a href="#">contraseña?</a></span
+              >
+            </div>
+          </form>
+        </div>
+        <!-- fin formulario inicio de sesion -->
+      </div>
+      <!-- fin inicio de sesion -->
+      <div class="header container">
+        <a href="index.html">
+          <img
+            id="logo"
+            class="header__logo"
+            src="img/Copia_de_foro_2.png"
+            alt="Logo"
+          />
+        </a>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav--link">Inicio</a>
+          <a href="rangos.html" class="header__nav--link">Rangos</a>
+          <a href="comunidad.html" class="header__nav--link">Comunidad</a>
+          <a href="servidor.html" class="header__nav--link header__nav--activo"
+            >Servidor</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- fin header -->
+    <!-- main -->
+    <main>
+      <!-- informacion del servidor -->
+      <section class="info">
+        <h2 class="contenido__title">Información del servidor</h2>
+        <div class="info__container sombra">
+          <div class="info__container--element">
+            Estado del servidor: <font color="green">Online</font>
+          </div>
+
+          <div class="info__container--element">
+            ip: mc.extremeldm.com:25611
+          </div>
+        </div>
+      </section>
+      <!-- fin informacion del servidor -->
+      <!-- avisos -->
+      <section class="avisos">
+        <h2 class="contenido__title">Avisos</h2>
+        <div class="avisos__container container">
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Actualización</h3>
+            <p>
+              - Se agregaron items nuevos, menas, ores, comida, vehículos, etc.
+              todo para la preparación del nuevo shop en el cual podran comprar
+              todos los recursos y objetos nuevos.
+              <br />- Se agregaron nuevos items crafteables como el ruby
+              descubre algunos de los items crafteables en /ia.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Próximamente</h3>
+            <p>
+              - Crates o lo que sería cajas tipo loot boxes. <br />- Rework de
+              rangos pagos y agregación de nuevos rangos gratuitos. <br />- Se
+              van a poder craftear los nuevos ítems.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Evento PVP</h3>
+            <p>
+              El día 10/05 a las 10:00 pm se realizará el evento pvp.
+              <br />Premio: set ruby irrompible + alas a elección.
+              <br />Inscribirse por discord.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Mantenimiento</h3>
+            <p>
+              Mantenimiento programado para el día 7/05 a las 18:00 pm.
+              <br />Se aplicarán unas mínimas optimizaciones de urgencia, el
+              update semanal se realizará antes del evento.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Actualización</h3>
+            <p>
+              - Se agregaron items nuevos, menas, ores, comida, vehículos, etc.
+              todo para la preparación del nuevo shop en el cual podran comprar
+              todos los recursos y objetos nuevos.
+              <br />- Se agregaron nuevos items crafteables como el ruby
+              descubre algunos de los items crafteables en /ia.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Próximamente</h3>
+            <p>
+              - Crates o lo que sería cajas tipo loot boxes. <br />- Rework de
+              rangos pagos y agregación de nuevos rangos gratuitos. <br />- Se
+              van a poder craftear los nuevos ítems.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Evento PVP</h3>
+            <p>
+              El día 10/05 a las 10:00 pm se realizará el evento pvp.
+              <br />Premio: set ruby irrompible + alas a elección.
+              <br />Inscribirse por discord.
+            </p>
+          </div>
+          <div class="avisos__container--element">
+            <h3 class="avisos__container--title">Mantenimiento</h3>
+            <p>
+              Mantenimiento programado para el día 7/05 a las 18:00 pm.
+              <br />Se aplicarán unas mínimas optimizaciones de urgencia, el
+              update semanal se realizará antes del evento.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </section>
+      <!-- fin avisos -->
+    </main>
+    <!-- fin main -->
+    <!-- footer -->
+    <footer class="footer__container">
+      <div class="footer container">
+        <div class="footer__info">
+          <img
+            class="footer__info--img"
+            src="img/logoSinFondo.png"
+            alt="logo"
+          />
+          <p>Versión minecraft 1.16.4 Java</p>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoFacebook.png" alt="Facebook"
+          /></a>
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoInstagram.png" alt="Instagram"
+          /></a>
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoDiscord.png" alt="Discord"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer -->
+  </body>
+  <script src="scripts/index.js"></script>
+</html>

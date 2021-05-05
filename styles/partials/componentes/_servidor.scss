@@ -1,0 +1,51 @@
+@use '../variables/variables' as *;
+
+// Informacion del servidor
+
+.info {
+  display: block;
+  margin-top: 27.8rem;
+  height: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    &--element {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Avisos
+
+.avisos {
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, $primario),
+    url(../../../img/minecraft-wallpaper.jpg);
+  margin-bottom: 6rem;
+
+  &__container {
+    height: 90rem;
+    background-color: rgba($blanco, 0.7);
+    display: flex;
+    flex-direction: column;
+    border-style: solid none;
+    border-color: $blanco;
+    overflow-y: scroll;
+
+    &--element {
+      padding: 3rem;
+      border-style: solid none;
+      border-color: $blanco;
+      color: $negro;
+    }
+
+    &--title {
+      color: $primario;
+      padding: 2rem 0;
+    }
+  }
+}

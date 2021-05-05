@@ -1,0 +1,41 @@
+@use '../variables/variables' as *;
+
+.footer__container {
+  background-color: $negro;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__info {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    &--img {
+      height: 15rem;
+      padding: 1rem;
+    }
+  }
+
+  &__links {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+
+    &--item:hover {
+      color: $secundario;
+    }
+  }
+}
+
+.logoimg {
+  height: 3.5rem;
+  width: 3.5rem;
+  filter: invert(0.9);
+}

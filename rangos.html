@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Extreme LDM - Rangos</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="navbar" class="header__container">
+      <!-- inicio de sesion -->
+      <div>
+        <div class="loginb container">
+          <button
+            class="loginb__button"
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Iniciar sesión
+          </button>
+        </div>
+        <!-- formulario inicio de sesion -->
+        <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="modal__close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <form class="modal__content">
+            <div class="modal__content--cbutton">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="modal__close"
+                title="Cerrar"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__container">
+              <label class="modal__content--title" for="uname"
+                ><b>Usuario</b></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresar usuario"
+                name="uname"
+                required
+              />
+
+              <label class="modal__content--title" for="psw"
+                ><b>Contraseña</b></label
+              >
+              <input
+                type="password"
+                placeholder="Ingresar contraseña"
+                name="psw"
+                required
+              />
+
+              <button type="submit">Ingresar</button>
+              <label class="modal__content--title">
+                <input type="checkbox" checked="checked" name="remember" />
+                Recordarme
+              </label>
+            </div>
+
+            <div class="modal__container" style="background-color: #802b83">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="modal__content--cancelbtn"
+              >
+                Cancelar
+              </button>
+              <span class="modal__content--psw"
+                >Olvidaste la <a href="#">contraseña?</a></span
+              >
+            </div>
+          </form>
+        </div>
+        <!-- fin formulario inicio de sesion -->
+      </div>
+      <!-- fin inicio de sesion -->
+      <div class="header container">
+        <a href="index.html">
+          <img
+            id="logo"
+            class="header__logo"
+            src="img/Copia_de_foro_2.png"
+            alt="Logo"
+          />
+        </a>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav--link">Inicio</a>
+          <a href="rangos.html" class="header__nav--link header__nav--activo"
+            >Rangos</a
+          >
+          <a href="comunidad.html" class="header__nav--link">Comunidad</a>
+          <a href="servidor.html" class="header__nav--link">Servidor</a>
+        </nav>
+      </div>
+    </header>
+    <!-- fin header -->
+    <!-- main -->
+    <main>
+      <!-- rangos -->
+      <section class="rangos">
+        <div class="rangos__container sombra">
+          <h1 class="rangos__title">Rangos disponibles</h1>
+          <div class="rangos__tablink--container">
+            <button
+              class="rangos__tablink"
+              onclick="openPage('vip', this, '#3bbd6b')"
+              id="defaultOpen"
+            >
+              VIP
+            </button>
+            <button
+              class="rangos__tablink"
+              onclick="openPage('ultimate', this, '#ee8a00')"
+            >
+              Ultimate
+            </button>
+            <button
+              class="rangos__tablink"
+              onclick="openPage('extreme', this, '#6b2d80')"
+            >
+              Extreme
+            </button>
+          </div>
+          <div>
+            <div id="vip" class="rangos__tabcontent">
+              <h3>Beneficios:</h3>
+              <p>
+                /fly <br />1 millon de dinero <br />Kit de vip <br />1000 almas
+                <br />Precio: 10 USD
+              </p>
+              <button type="button" class="bcomprar">Comprar</button>
+            </div>
+
+            <div id="ultimate" class="rangos__tabcontent">
+              <h3>Beneficios:</h3>
+              <p>
+                /fly<br />
+                /heal<br />
+                Kit Ultimate<br />
+                2.5 millones en dinero<br />
+                3 mil almas<br />
+                15 niveles SKILLS<br />
+                Precio: 20 USD
+              </p>
+              <button type="button" class="bcomprar">Comprar</button>
+            </div>
+
+            <div id="extreme" class="rangos__tabcontent">
+              <h3>Beneficios:</h3>
+              <p>
+                /fly puedes volar<br />
+                /vanish te haces invisible<br />
+                /heal te curas gratis<br />
+                /hat te pones lindos sombreritos<br />
+                /glow puedes ponerte efecto de contorno en tu personaje<br />
+                /repair reparas tus cosas gratis<br />
+                /ender abres el cofre del ender en cualquier lugar<br />
+                -elytra superboost con velocimetro<br />
+                -Tienes 15 homes disponibles para guardar<br />
+                -Eres inmune al /jail<br />
+                -Tamaño de mochila maximo de 6 filas por 9.<br />
+                -puedes tener una imagen personalizada dentro del juego
+                jpg/png/gif.<br />
+                -efecto de particulas personalizado para tu personaje<br />
+                -pase de batalla premium incluido. (proximamente)<br />
+                -puedes escribir en colores en el chat /colorpicker o con los
+                codigos de colores. (fixing)<br />
+                Kit EXTREME<br />
+                4.0 millones en dinero<br />
+                6 mil almas<br />
+                30 niveles SKILLS<br />
+                Precio: 30 USD
+              </p>
+              <button type="button" class="bcomprar">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fin rangos -->
+    </main>
+    <!-- fin main -->
+    <!-- footer -->
+    <footer class="footer__container">
+      <div class="footer container">
+        <div class="footer__info">
+          <img
+            class="footer__info--img"
+            src="img/logoSinFondo.png"
+            alt="logo"
+          />
+          <p>Versión minecraft 1.16.5 Java</p>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoFacebook.png" alt="Facebook"
+          /></a>
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoInstagram.png" alt="Instagram"
+          /></a>
+          <a href="#" class="footer__links--item"
+            ><img class="logoimg" src="img/logoDiscord.png" alt="Discord"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer -->
+  </body>
+  <script src="scripts/index.js"></script>
+</html>

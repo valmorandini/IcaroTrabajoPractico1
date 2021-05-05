@@ -1,0 +1,76 @@
+@use '../variables/variables' as *;
+
+//  Rangos
+
+.rangos {
+  display: block;
+  align-items: center;
+  margin-top: 27.8rem;
+  padding: 5rem;
+  height: calc(140vh - 7.4rem);
+  background-image: url(../../../img/minecraft-wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(transparent, transparent, $primario),
+    url(../../../img/minecraft-wallpaper.jpg);
+
+  &__container {
+    margin-top: 8rem;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__tablink {
+    background-color: #555;
+    color: white;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+
+    &--container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__tablink:hover {
+    background-color: #777;
+  }
+
+  &__tabcontent {
+    color: white;
+    display: none;
+    padding: 10rem 2rem;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#vip {
+  background-color: #3bbd6b;
+}
+#ultimate {
+  background-color: #ee8a00;
+}
+#extreme {
+  background-color: #6b2d80;
+}
+
+.bcomprar {
+  width: auto;
+  padding: 1rem 1.8rem;
+  background-color: #f44336;
+}
