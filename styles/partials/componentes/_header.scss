@@ -139,6 +139,10 @@ button:hover {
   }
 }
 
+#pswb:hover {
+  color: $secundario;
+}
+
 @-webkit-keyframes animatezoom {
   from {
     -webkit-transform: scale(0);

@@ -88,8 +88,9 @@
   font-size: 7.5rem;
 }
 .hero__content--description {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 3rem 0;
+  font-weight: normal;
 }
 
 .contenido {
@@ -279,6 +280,10 @@ button:hover {
 .modal__close:hover, .modal__close:focus {
   color: red;
   cursor: pointer;
+}
+
+#pswb:hover {
+  color: #43be0a;
 }
 
 @-webkit-keyframes animatezoom {
