@@ -1,6 +1,8 @@
 var modal = document.getElementById("id01");
+var slideIndex = 1;
 
 // funcion1 - header
+
 window.onscroll = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "1rem 1rem";
@@ -39,18 +41,7 @@ document.getElementById("defaultOpen").click();
 
 // funcion 4 - galeria
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-plusSlides = (n) => {
-  showSlides((slideIndex += n));
-};
-
-currentSlide = (n) => {
-  showSlides((slideIndex = n));
-};
-
-function showSlides(n) {
+showSlides = (n) => {
   var i;
   var slides = document.getElementsByClassName("galeria__item");
   var dots = document.getElementsByClassName("dot");
@@ -68,4 +59,14 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-}
+};
+
+showSlides(slideIndex);
+
+plusSlides = (n) => {
+  showSlides((slideIndex += n));
+};
+
+currentSlide = (n) => {
+  showSlides((slideIndex = n));
+};

@@ -6,8 +6,8 @@
   display: block;
   align-items: center;
   margin-top: 27.8rem;
-  padding: 5rem;
-  height: calc(140vh - 7.4rem);
+  padding: 8rem;
+  height: 100%;
   background-image: url(../../../img/minecraft-wallpaper.jpg);
   background-position: right;
   background-repeat: no-repeat;
@@ -26,13 +26,13 @@
 
   &__tablink {
     background-color: #555;
-    color: white;
+    color: $blanco;
     float: center;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 1.4rem 1.6rem;
+    font-size: 1.7rem;
     width: 25%;
 
     &--container {
@@ -46,7 +46,7 @@
   }
 
   &__tabcontent {
-    color: white;
+    color: $blanco;
     display: none;
     padding: 10rem 2rem;
     height: 100%;
