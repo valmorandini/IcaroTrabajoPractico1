@@ -18,15 +18,16 @@
 
   &__content {
     display: flex;
-    max-width: 40%;
+    max-width: 65%;
     flex-direction: column;
     margin-left: 10rem;
 
     &--title {
-      font-size: 7rem;
+      font-size: 7.5rem;
     }
     &--description {
-      font-size: 2.2rem;
+      font-size: 3rem;
+      padding: 3rem 0;
     }
   }
 }
